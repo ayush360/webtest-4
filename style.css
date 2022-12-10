@@ -1,0 +1,65 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: monospace;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    background-color: aqua;
+    padding: 3rem;
+}
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar li a{
+    text-decoration: none;
+    color: gray;
+    padding: 1rem;
+}
+.navbar a:hover{
+    color: black;
+}
+.navbar li{
+    font-size: 2rem;
+    list-style: none;
+}
+
+
+/* first-section */
+#first-sec{
+
+}
+
+/* second section */
+#second-sec{
+
+}
+
+
+/* third section */
+#third-sec{
+    
+}
+
+
+/* Footer */
+footer{
+    background-color: rgb(49, 45, 45);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: whitesmoke;
+}
+.foot p a{
+    text-decoration: none;
+    color: white;
+}
