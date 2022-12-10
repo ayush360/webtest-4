@@ -2,64 +2,154 @@
     margin: 0 ;
     padding: 0 ;
 }
-
+body{
+    background-color: gainsboro;
+}
 h1{
     font-size: 4rem;
     font-family: monospace;
 }
+button, .blue, .gray{
+    cursor: pointer;
+}
+.innerbox{
+    display: flex;
+    justify-content: space-around;
+}
+.innerbox p{
+    border-radius: 5px;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    background-color: skyblue ;
+    color: blue;
+}
+.boxes h3{
+    line-height: 2;
+}
 
 /* Navbar */
 nav{
+    position: sticky;
+    top: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-    background-color: aqua;
-    padding: 3rem;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
 }
 .navbar ul{
     display: flex;
-    flex-wrap: wrap;
+}
+.logo{
+    font-size: 1.4rem;
+
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(109, 109, 234);
 }
 .navbar li a{
     text-decoration: none;
-    color: gray;
+    color: black;
     padding: 1rem;
 }
 .navbar a:hover{
-    color: black;
+    color: rgb(98, 98, 238);
 }
 .navbar li{
-    font-size: 2rem;
+    font-size: 1.2rem;
     list-style: none;
+}
+.navbar li .active{
+    color: rgb(98, 98, 238);
 }
 
 
 /* first-section */
 #first-sec{
-
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    background-color: white;
+    margin: 2rem;
+    border-radius: 8px;
 }
+#first-sec div{
+    border: 1px solid gainsboro;
+    padding: 0.5rem;
+}
+#first-sec .box-1{
+    align-items: center;
+    display: flex;
+    color: rgb(98, 98, 238);
+    justify-content: space-around;
+}
+#first-sec .box-1 .cross{
+    border-radius: 2px;
+    border: 1px solid rgb(98, 98, 238);
+    padding: 0;
+}
+#first-sec .box-1 input{
+    border: none;
+}
+#first-sec button{
+    background-color: rgb(65, 65, 116);
+    font-weight: 300;
+    cursor: pointer;
+    color: white;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: none;
+}
+
 
 /* second section */
 #second-sec{
-
-}
-
-
-/* third section */
-#third-sec{
-    
-}
-
-
-/* Footer */
-footer{
-    background-color: rgb(49, 45, 45);
-    display: flex;
-    flex-wrap: wrap;
+    display: flex ;
+    margin: 2rem;
     justify-content: space-around;
-    color: whitesmoke;
 }
-.foot p a{
-    text-decoration: none;
-    color: white;
+#second-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+#second-container .head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem ;
+}
+#second-container .foot{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px 20px;
+}
+#second-sec div{
+    border: 1px solid none;
+    padding: 0.2rem;
+    border-radius: 12px;
+}
+#second-sec .boxes{
+    padding: 1rem;
+    background-color: white;
+}
+#second-sec .boxes:hover{
+    cursor: pointer;
+}
+#second-sec .boxes img{
+    border-radius: 50%;
+    height: 10vh;
+    width: 10vw;
+}
+#first-container .sub{
+    padding-top: 1rem;
+}
+#first-container .sub h2{
+    line-height: 2.5;
+}
+.secbox{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4px 4px;
 }
